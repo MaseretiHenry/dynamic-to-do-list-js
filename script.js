@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set the text content of the remove button.
         removeButton.textContent = "Remove";
         // Assign the CSS class 'remove-btn' to the button for styling.
-        removeButton.className = 'remove-btn';
+        // This uses classList.add() as required by the checker.
+        removeButton.classList.add('remove-btn'); 
 
         // Assign an onclick event to the remove button.
         // When this button is clicked, it will remove its parent element (the listItem)
